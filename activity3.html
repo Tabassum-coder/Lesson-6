@@ -5,27 +5,27 @@
     <title>Activity 3</title>
 </head>
 <body>
-    <form action="/action_page.php" oninput="x.value=(parseInt(a.value)+parseInt(b.value)+parseInt(c.value))/3">
+    <form action="/action_page.php" oninput="x.value=Math.floor((parseInt(a.value)+parseInt(b.value)+parseInt(c.value))/3)">
+        <label>Score Card</label><br><br>
         <select>
-            <option value="maths">Maths</option>
-            <option value="eng">English</option>
-            <option value="sci">Science</option>
+            <option>Maths</option>
+            <option>English</option>
+            <option>Science</option>
         </select>
-        <input type="number" id="a">  <br>
-        <select>
-            <option value="maths">Maths</option>
-            <option value="eng">English</option>
-            <option value="sci">Science</option>
-        </select>
-        <input type="number" id="b"><br>
-        <select>
-            <option value="maths">Maths</option>
-            <option value="eng">English</option>
-            <option value="sci">Science</option>
-        </select>
-        <input type="number" id="c"><br>
-        <label>Average: </label>
-        <output name="x" for="a b c"></output>
+        <input type="text" id="a"> <br> 
+    <select>
+        <option>Maths</option>
+        <option>English</option>
+        <option>Science</option>
+    </select>
+    <input type="text" id="b"> <br>
+    <select>
+        <option>Maths</option>
+        <option>English</option>
+        <option>Science</option>
+    </select>
+    <input type="text" id="c"> <br>
+        <label>Avg Marks : </label><output name="x" for="a b c"></output>
     </form>
     
 </body>
